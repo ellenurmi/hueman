@@ -26,7 +26,14 @@ class App extends Component {
           </div>
         </div>
         <div className="download">
-          <a className="download-link" href="https://s3-us-west-2.amazonaws.com/hueman/Hueman-0.1.0.dmg">download now</a>
+          <a className="download-link" href="https://s3-us-west-2.amazonaws.com/hueman/Hueman-0.1.0.dmg">download for mac</a>
+        </div>
+        <div className="footer">
+          <p>
+            created for fun by <a href="http://ellenurmi.com" rel="noopener noreferrer" target="_blank">elle nurmi</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp; 
+            <a href="mailto:elle@nurmi.co">contact</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="https://github.com/ellenurmi/hueman/tree/master/app" rel="noopener noreferrer" target="_blank">source</a>
+          </p>
         </div>
       </div>
     );

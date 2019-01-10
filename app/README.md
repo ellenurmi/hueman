@@ -1,34 +1,5 @@
-# YAREMS
+# hueman
 
-**Yet Another React Electron Menubar Starter** 
+**simple palette management for humans** 
 
-[![Build Status](https://travis-ci.org/epilande/yarems.svg?branch=master)](https://travis-ci.org/epilande/yarems)
-
-![yarems](http://i.giphy.com/ckI6lN0ti8I6s.gif)
-
-## Quick Start
-
-#### Clone this repo
-
-```bash
-$ git clone https://github.com/epilande/yarems.git
-$ cd yarems
-```
-
-#### Install dependencies
-
-```bash
-$ npm install
-```
-
-#### Launch dev environment
-
-```bash
-$ npm run dev
-```
-
-#### Package application
-
-```bash
-$ npm run package
-```
+Built using electron & react. Many thanks to yarems for a quick framework (https://github.com/epilande/yarems).
