@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import demo from './demo.gif';
+import ReactGA from 'react-ga';
 import './App.css';
 
 class App extends Component {
@@ -26,11 +27,18 @@ class App extends Component {
           </div>
         </div>
         <div className="download">
-          <a className="download-link" href="https://s3-us-west-2.amazonaws.com/hueman/Hueman-0.1.0.dmg">download for mac</a>
+          <a
+            className="download-link"
+            onClick={ReactGA.event({category: 'click', action: 'download', label: 'hueman'})}
+            href="https://s3-us-west-2.amazonaws.com/hueman/Hueman-0.1.0.dmg">
+              download for mac
+          </a>
         </div>
         <div className="footer">
           <p>
-            created for fun by <a href="http://ellenurmi.com" rel="noopener noreferrer" target="_blank">elle nurmi</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp; 
+            &nbsp;&nbsp;love/hate/indifferent to hueman? <a href="mailto:elle@nurmi.co">tell me about it.</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            created by <a href="http://ellenurmi.com" rel="noopener noreferrer" target="_blank">elle nurmi</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp; 
             <a href="mailto:elle@nurmi.co">contact</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
             <a href="https://github.com/ellenurmi/hueman/tree/master/app" rel="noopener noreferrer" target="_blank">source</a>
           </p>
